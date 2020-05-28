@@ -72,6 +72,6 @@ namespace Klarna.Rest.Core.Model
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty(PropertyName = "tms_reference")]
-        public ShippingMethod TmsReference { get; set; }
+        public string TmsReference { get; set; }
     }
 }
