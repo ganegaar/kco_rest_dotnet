@@ -70,7 +70,6 @@ namespace Klarna.Rest.Core.Model
         /// <summary>
         /// TMS reference. Required to map completed orders to shipments reserved in TMS. 
         /// </summary>
-        [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty(PropertyName = "tms_reference")]
         public string TmsReference { get; set; }
     }

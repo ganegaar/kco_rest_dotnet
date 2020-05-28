@@ -1,0 +1,138 @@
+﻿{
+  "order_id": "b16fd3f5-054e-6c70-90a8-b10748db28ad",
+  "status": "checkout_incomplete",
+  "purchase_country": "se",
+  "purchase_currency": "SEK",
+  "locale": "en-US",
+  "billing_address": {
+    "given_name": "Test",
+    "family_name": "User",
+    "email": "utku.sayin@litium.com",
+    "street_address": "Langelandsgatan 31",
+    "postal_code": "16443",
+    "city": "Kista",
+    "phone": "+46 70 973 42 32",
+    "country": "se"
+  },
+  "customer": {
+    "gender": "male"
+  },
+  "shipping_address": {
+    "given_name": "Test",
+    "family_name": "User",
+    "email": "utku.sayin@litium.com",
+    "street_address": "Langelandsgatan 31",
+    "postal_code": "16443",
+    "city": "Kista",
+    "phone": "+46 70 973 42 32",
+    "country": "se"
+  },
+  "order_amount": 20400,
+  "order_tax_amount": 4080,
+  "order_lines": [
+    {
+      "type": "physical",
+      "reference": "637163166670779736-02423006_M",
+      "name": "Square scarfe",
+      "quantity": 1,
+      "quantity_unit": "nos",
+      "unit_price": 19900,
+      "tax_rate": 2500,
+      "total_amount": 19900,
+      "total_discount_amount": 0,
+      "total_tax_amount": 3980
+    },
+    {
+      "type": "shipping_fee",
+      "reference": "0",
+      "name": "KSS",
+      "quantity": 1,
+      "quantity_unit": "nos",
+      "unit_price": 500,
+      "tax_rate": 2500,
+      "total_amount": 500,
+      "total_discount_amount": 0,
+      "total_tax_amount": 100
+    }
+  ],
+  "merchant_urls": {
+    "terms": "http://Example.localtest.me/checkout/terms-and-condition",
+    "checkout": "http://Example.localtest.me/checkout?accountId=KCOV3_SE&transactionNumber={checkout.order.id}",
+    "confirmation": "https://example.com/site.axd/KlarnaPayment/Confirmation?accountId=KCOV3_SE&transactionNumber={checkout.order.id}",
+    "push": "https://example.com/site.axd/KlarnaPayment/PushNotification?accountId=KCOV3_SE&transactionNumber={checkout.order.id}",
+    "validation": "https://example.com/site.axd/KlarnaPayment/Validate?accountId=KCOV3_SE&transactionNumber={checkout.order.id}",
+    "shipping_option_update": "https://example.com/site.axd/KlarnaPayment/ShippingOptionUpdate?accountId=KCOV3_SE&transactionNumber={checkout.order.id}",
+    "address_update": "https://example.com/site.axd/KlarnaPayment/AddressUpdate?accountId=KCOV3_SE&transactionNumber={checkout.order.id}",
+    "notification": "http://Example.localtest.me/PaymentProviderResult.axd/StaticCallback/KlarnaV3?accountId=KCOV3_SE&transactionNumber={checkout.order.id}"
+  },
+  "html_snippet": "<div id=\"klarna-checkout-container\" style=\"overflow-x: hidden;\">\n  <div id=\"klarna-unsupported-page\">\n  <style type=\"text/css\">\n  @-webkit-keyframes klarnaFadeIn{from{opacity:0}to{opacity:1}}@-moz-keyframes klarnaFadeIn{from{opacity:0}to{opacity:1}}@keyframes klarnaFadeIn{from{opacity:0}to{opacity:1}}#klarna-unsupported-page{opacity:0;opacity:1\\9;-webkit-animation:klarnaFadeIn ease-in 1;-moz-animation:klarnaFadeIn ease-in 1;animation:klarnaFadeIn ease-in 1;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-duration:.1s;-moz-animation-duration:.1s;animation-duration:.1s;-webkit-animation-delay:5s;-moz-animation-delay:5s;animation-delay:5s;text-align:center;padding-top:64px}#klarna-unsupported-page .heading{font-family:Source Sans Pro,Helvetica,Arial,sans-serif;line-height:48px;font-weight:200;color:#303030;font-size:42px;margin:24px 0}#klarna-unsupported-page .subheading{font-family:Source Sans Pro,Helvetica,Arial,sans-serif;line-height:28px;font-weight:400;color:rgba(0,0,0,.7);font-size:19px;max-width:560px;margin:10px auto}#klarna-unsupported-page .subheading a{text-decoration:none;background-color:transparent;border:0;color:rgba(0,0,0,.7);font-weight:600}\n  </style>\n  <h1 class=\"heading\">Oops.</h1>\n    <p class=\"subheading\">It looks like an important part of the checkout experience failed to load and we are unable to offer you a way to pay right now.</p>\n    <p class=\"subheading\">Please refresh the page to try again. If this isn't the first time you've seen this message then there may be a more permanent error and you should contact customer service at Klarna.com.</p>\n  </div>\n  <script type=\"text/javascript\">\n  /* <![CDATA[ */\n  (function(w,k,i,d,n,c,l){\n    w[k]=w[k]||function(){(w[k].q=w[k].q||[]).push(arguments)};\n    l=w[k].config={\n      container:w.document.getElementById(i),\n      ORDER_URL:'https://js.playground.klarna.com/eu/kco/checkout/orders/b16fd3f5-054e-6c70-90a8-b10748db28ad',\n      AUTH_HEADER:'KlarnaCheckout c7zzflqswmaibdwwfciw',\n      LOCALE:'en-US',\n      ORDER_STATUS:'checkout_incomplete',\n      MERCHANT_TAC_URI:'http://Example.localtest.me/checkout/terms-and-condition',\n      MERCHANT_NAME:'Playground Demo Merchant',\n      HASHED_MERCHANT_ID:'60a851c848bfa7fe74239e7b5865ca61',\n      GUI_OPTIONS:[],\n      ALLOW_SEPARATE_SHIPPING_ADDRESS:true,\n      PURCHASE_COUNTRY:'swe',\n      PURCHASE_CURRENCY:'SEK',\n      TESTDRIVE:true,\n      CHECKOUT_DOMAIN:'https://checkout-eu.playground.klarna.com',\n      BOOTSTRAP_SRC:'https://js.playground.klarna.com/kcoc/200525-f8001a3/checkout.bootstrap.js',\n      CLIENT_EVENT_HOST:'https://eu.playground.klarnaevt.com',\n      LIQUORICE_ENABLED:false,\n      CONDENSED_ENABLED:false\n    };\n    n=d.createElement('script');\n    c=d.getElementById(i);\n    n.async=!0;\n    n.src=l.BOOTSTRAP_SRC;\n    c.appendChild(n);\n    try{\n      ((w.Image && (new w.Image))||(d.createElement && d.createElement('img'))||{}).src =\n        l.CLIENT_EVENT_HOST + '/v1/checkout/snippet/load' +\n        '?sid=' + l.ORDER_URL.split('/').slice(-1) +\n        '&order_status=' + w.encodeURIComponent(l.ORDER_STATUS) +\n        '&timestamp=' + (new Date).getTime();\n    }catch(e){}\n  })(this,'_klarnaCheckout','klarna-checkout-container',document);\n  /* ]]> */\n  </script>\n  <noscript>\nPlease <a href=\"http://enable-javascript.com\">enable JavaScript</a>.\n  </noscript>\n</div>",
+  "started_at": "2020-05-27T18:59:49Z",
+  "last_modified_at": "2020-05-27T18:59:54Z",
+  "options": {
+    "allow_separate_shipping_address": true,
+    "color_button": "#ff69b4",
+    "date_of_birth_mandatory": true,
+    "title_mandatory": false,
+    "national_identification_number_mandatory": false,
+    "require_validate_callback_success": false,
+    "show_subtotal_detail": false
+  },
+  "external_payment_methods": [
+    {
+      "name": "Cash on delivery",
+      "redirect_url": "https://example.com/site.axd/KlarnaPayment/ChangePaymentMethod?PaymentProvider=DirectPay&PaymentMethod=DirectPayment&RedirectUrl=%2Fcheckout.PlaceOrderDirect",
+      "fee": 0
+    }
+  ],
+  "external_checkouts": [],
+  "shipping_options": [
+    {
+      "id": "4c208f95-f693-45c4-ace8-3a15ecd5916b",
+      "name": "Express package",
+      "description": "",
+      "price": 3000,
+      "tax_amount": 600,
+      "tax_rate": 2500,
+      "preselected": false,
+      "shipping_method": "Own",
+      "delivery_details": {},
+      "tms_reference": "PickupStore"
+    },
+    {
+      "id": "9f29ec8f-c0a8-4f34-9377-be99c8e22d5a",
+      "name": "Standard package",
+      "description": "",
+      "price": 2000,
+      "tax_amount": 400,
+      "tax_rate": 2500,
+      "preselected": false,
+      "shipping_method": "Own",
+      "delivery_details": {},
+      "tms_reference": "PickupStore"
+    }
+  ],
+  "recurring": false,
+  "selected_shipping_option": {
+    "id": "id-1000",
+    "name": "Pickup Box",
+    "price": 500,
+    "tax_amount": 0,
+    "tax_rate": 0,
+    "preselected": false,
+    "shipping_method": "BoxUnreg",
+    "delivery_details": {
+      "carrier": "instabox",
+      "class": "economy",
+      "pickup_location": {
+        "id": "loc-2",
+        "name": "Coop Loet",
+        "address": {
+          "street_address": "Storgatan 59",
+          "postal_code": "97232",
+          "city": "Luleå",
+          "country": "se"
+        }
+      }
+    }
+  }
+}

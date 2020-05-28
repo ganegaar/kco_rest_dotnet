@@ -46,6 +46,9 @@
     <None Update="Data\CheckoutOrder.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Data\CheckoutOrderKss.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Data\CustomerTokenCreateNewOrderRequest.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

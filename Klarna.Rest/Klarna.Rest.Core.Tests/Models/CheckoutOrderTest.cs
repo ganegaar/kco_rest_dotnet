@@ -26,6 +26,27 @@ namespace Klarna.Rest.Core.Tests.Models
         }
     }
 
+    public class CheckoutOrderKssTest
+    {
+        [Fact]
+        public void CanReadJson()
+        {
+            var json = File.ReadAllText(Path.Combine(System.Environment.CurrentDirectory, "Data", "CheckoutOrderKss.json"));
+            Assert.True(!string.IsNullOrEmpty(json));
+        }
+
+        [Fact]
+        public void CanDeserialize()
+        {
+            var json = File.ReadAllText(Path.Combine(System.Environment.CurrentDirectory, "Data", "CheckoutOrderKss.json"));
+            var checkoutOrder = JsonConvert.DeserializeObject<CheckoutOrder>(json);
+            Assert.Equal("b16fd3f5-054e-6c70-90a8-b10748db28ad", checkoutOrder.OrderId);
+            Assert.Equal("id-1000", checkoutOrder.SelectedShippingOption.Id);
+            Assert.Equal("loc-2", checkoutOrder.SelectedShippingOption.DeliveryDetails.PickupLocation.Id);
+            Assert.Equal("Storgatan 59", checkoutOrder.SelectedShippingOption.DeliveryDetails.PickupLocation.Address.StreetAddress);           
+        }
+    }
+
     public class CallbackAddressUpdateTest
     {
         [Fact]
